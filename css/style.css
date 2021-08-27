@@ -4,5 +4,119 @@
 
 body {
 	margin: 0;
-	background: cornflowerblue;
+	display: flex;
+    justify-content: center;
+	background-color: hsl(225, 100%, 94%);
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+.container{
+	width: 90%;
+	background-color: #fff;
+    border-radius: 20px;
+	text-align: center;
+	font-family: Arial;
+	margin-top: 55px;
+	margin-bottom: 55px;
+
+}
+.top-img{
+	width: 100%;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.main{
+}
+.main h1{
+	font-size: 25px;
+}
+.main p{
+	font-size: 16px;
+	line-height: 1.6em;
+	color: #7b7878;
+	padding: 5px 23px;
+	
+}
+
+.pay-div{
+	display: flex;
+    justify-content: space-around;
+	background-color:hsl(225, 100%, 98%) ;
+	border-radius: 10px;
+    margin: 25px 25px;
+	height: 80px;
+}
+
+.pay-div a{
+	font-size: 16px;
+    margin-top: 27px;
+}
+.pay-div h3{
+	margin: 0;
+}
+.pay-div img{
+	height: 65%;
+	margin-top: 12px;
+}
+
+.pay-div div{
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+.pay-div p{
+	color: #7b7878;
+	margin: 0;
+}
+
+.end{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pay-btn{
+	width: 85%;
+	background-color:hsl(245, 75%, 52%);
+    color: #fff;
+	border-radius: 13px;
+	font-size: 18px;
+	height: 2.5em;
+ }
+ .end a{
+	 text-decoration: none;
+	 font-size: 18px;
+	 color: #7b7878;
+	 margin-top: 25px;
+	 margin-bottom: 25px;
+ }
+
+
+ @media(min-width:375px)
+ {
+	 body{
+		 background-color: hsl(225, 100%, 94%);
+		 background-image: url(../images/pattern-background-desktop.svg);
+		 background-position: top;
+	 }
+	 .container{
+		width: 30%;
+	}
+	.pay-div a{
+		text-decoration: none;
+	}
+	.pay-div a:hover{
+		opacity: 0.5;
+	}
+
+	.pay-btn:hover{
+		opacity: 0.7;
+	}
+
+	.end a:hover{
+		color: #000;
+	}
+
+	
+ }
